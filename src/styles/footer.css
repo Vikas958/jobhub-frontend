@@ -1,0 +1,16 @@
+footer {
+  background-color: #0866ff;
+  color: white;
+  margin-top: 30px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

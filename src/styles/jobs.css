@@ -1,0 +1,117 @@
+.search {
+  padding: 20px 0px;
+  margin: 100px 50px 0 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* box-shadow: 10px 10px 5px lightblue; */
+  border-radius: 20px;
+}
+.searches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  > input {
+    border: none;
+    outline: none;
+  }
+}
+/* .btn{
+  background-color: red;
+  padding: 10px 20px;
+} */
+.responsive-search {
+  display: none;
+}
+
+.management {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card h3 {
+  text-align: center;
+}
+.card {
+  display: flex;
+  max-width: 300px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;;
+  padding: 20px;
+}
+.jobrole {
+  display: flex;
+  justify-content: space-between;
+}
+.now {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.now svg {
+    margin-bottom: 7px; 
+  }
+.card btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.management h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .search {
+    display: none;
+  }
+  .responsive-search {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    /* background-color: red; */
+    background-color: rgb(243, 247, 249);
+    > .search-container {
+      background-color: white;
+      > input {
+        /* background-color: red; */
+        border: 0;
+        outline: 0;
+        margin-bottom: 1px;
+        padding: 5px 10px;
+      }
+    }
+
+    > button {
+      padding: 3px 65px;
+      background-color: #2a68ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width:1020px) {
+  .card{
+    max-width:250px;
+  }
+  
+}
+
